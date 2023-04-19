@@ -12,10 +12,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>CURRENCY CONVERTER</h1>
-        <div class="box">
-            <div class="left-box">
-                <select name="currency" class="currency">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>KUBISENSE</h1>
+            </div>
+            <div class="col-md-8 d-flex justify-content-center">
+                <h3>Currency Converter</h1> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="From-To-Amount-Result">From</div>
+                <select name="currency" class="currency ">
                     <option value="USD" selected>USD - United State Dollar</option>
                     <option value="NGN">NGN - Nigerian Naira</option>
                     <option value="GHS">GHS - Ghanian Cedi</option>
@@ -23,9 +31,9 @@
                     <option value="GBP">GBP - British Pound</option>
                     <option value="BTC">BTC - Bitcoin</option>
                 </select>
-                <input type="number" name="" id="input">
             </div>
-            <div class="right-box">
+            <div class="col-md-6">
+                <div class="From-To-Amount-Result">To</div>
                 <select name="currency" class="currency">
                     <option value="USD">USD - United State Dollar</option>
                     <option value="NGN" selected>NGN - Nigerian Naira</option>
@@ -33,11 +41,37 @@
                     <option value="EUR">EUR - Euro</option>
                     <option value="GBP">GBP - British Pound</option>
                     <option value="BTC">BTC - Bitcoin</option>
-                </select>
+                </select> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="From-To-Amount-Result">Amount</div>
+                <input type="number" name="" id="input">
+            </div>
+            <div class="col-md-6">
+                <div class="From-To-Amount-Result">Result</div>
                 <input type="number" name="" id="result" disabled>
             </div>
         </div>
-        <button class="btn" id="btn">CONVERTER</button>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <button class="btn " id="btn" >Calculate</button>
+            </div>
+            
+        </div>
+        
+       <!--  <div class="box">
+            <div class="left-box">
+                
+                <input type="number" name="" id="input">
+            </div>
+            <div class="right-box">
+                
+                
+            </div>
+        </div> -->
+        
     </div>
 
     <script src="./assets/JS/script.js"></script>
